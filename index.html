@@ -9,8 +9,22 @@
 <body>
     <center>
         <h1>Sample update</h1>
-        <input type="text" name="yourname" id="yourname">
-        <input type="text" name="youremail" id="youremail">
+        <input type="text" name="yourname" id="yourname" placeholder="Your Name">
+        <input type="text" name="youremail" id="youremail" placeholder="Your Email">
+
+        <input type="button" value="Submit" id="submit">
+
+        <br><br><br><br>
+        <h1 id="myname"></h1>
+        <h1 id="myemail"></h1>
     </center>
 </body>
+
+<script>
+    document.getElementById('submit').addEventListener('click', () => {
+        document.getElementById('myname').innerText = document.getElementById('yourname').value
+        document.getElementById('myemail').innerText = document.getElementById('youremail').value
+    })
+</script>
+
 </html>
