@@ -8,15 +8,17 @@
 </head>
 <body>
     <center>
-        <h1>Hiyas adik adik</h1>
+        <h1></h1>
         <input type="text" name="yourname" id="yourname" placeholder="Your Name"><br><br>
         <input type="text" name="youremail" id="youremail" placeholder="Your Email"><br><br>
+        <input type="text" name="Fullname" id="fullname" placeholder="Fullname"><br><br>
         <br><br>
         <input type="button" value="Submit" id="submit">
 
         <br><br><br><br>
         <h1 id="myname"></h1>
         <h1 id="myemail"></h1>
+        <h1 id="fullname"></h1>
     </center>
 </body>
 
@@ -24,6 +26,7 @@
     document.getElementById('submit').addEventListener('click', () => {
         document.getElementById('myname').innerText = document.getElementById('yourname').value
         document.getElementById('myemail').innerText = document.getElementById('youremail').value
+        document.getElementById('fullname').innerText = document.getElementById('fullname').value
     })
 </script>
 
